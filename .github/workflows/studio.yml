@@ -69,9 +69,9 @@ jobs:
       - name: Generate
         run: npx nuxi generate
         env:
-          NUXT_PUBLIC_STUDIO_API_URL: https://dev-api.nuxt.studio
-          NUXT_PUBLIC_STUDIO_TOKENS: d8b8ccf25d03f13cc5274ffd2e61fcc0f5ce7fe069b96d1b583f20186c7d3e19
-          NUXT_UI_PRO_LICENSE: ${{ secrets.NUXT_UI_PRO_LICENSE }}
+          NUXT_PUBLIC_STUDIO_API_URL: http://localhost:1337
+          NUXT_PUBLIC_STUDIO_TOKENS: 54e4f3a39412f2f33027afeb9af811d3199975810d72a815495afcc6c3149d08
+
 
       - name: Add .nojekyll file
         run: touch .output/public/.nojekyll
